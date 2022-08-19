@@ -1,0 +1,22 @@
+.footer-form__group {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-form__input {
+  min-width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  
+  
+  color: rgba(255, 255, 255, 0.6);
+  }
