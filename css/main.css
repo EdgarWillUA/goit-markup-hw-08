@@ -699,6 +699,11 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form-title {
+    text-align: left;
+  }
+}
 
 .footer-form__group {
   -webkit-box-align: center;
@@ -1329,6 +1334,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
