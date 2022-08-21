@@ -5,6 +5,20 @@
   .footer__conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+
+    }
+    // align-items: baseline;
   }
   
   .footer__logo {
@@ -32,6 +46,10 @@
     line-height: calc(24 / 14);
     color: #ffffff;
   }
+
+  // .footer__addres-conteiner {
+  //   text-align: center;
+  // }
   
   .footer__email {
     font-size: 14px;
@@ -62,12 +80,7 @@
     color: var(--hover-txt-color);
   }
   
-  .footer__conteiner {
-    display: flex;
-    gap: 70px;
-    align-items: baseline;
-  }
-  
+    
   .footer__socials-desc {
     font-family: 'Roboto';
     font-style: normal;

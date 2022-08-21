@@ -1,57 +1,68 @@
 .hero-title {
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 0.06em;
-    margin-bottom: 30px;
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  .work__title {
-    margin-bottom: 50px;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+  width: 360px;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  font-weight: 900;
   
-    font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  width: 696px;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
+}
+
+.team__title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
+  margin-bottom: 50px;
+  font-weight: 700;
+
+  color: var(--main-txt-cl);
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: calc(42 / 36);
-    color: var(--main-txt-cl);
   }
+}
 
-  .team__title {
-    margin-bottom: 50px;
-    font-weight: 700;
+.customers__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: calc(42 / 36);
-    color: var(--main-txt-cl);
   }
+}
 
-  .customers__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 28px;
-    line-height: calc(33 / 28);
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+.footer-form__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 36px;
-      line-height: calc(42 / 36);
-      
-    }
-  }
-
-  .footer-form__title {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: #ffffff;
-  }
+  color: #ffffff;
+}

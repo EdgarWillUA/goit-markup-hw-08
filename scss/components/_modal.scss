@@ -19,7 +19,7 @@
 
 .modal {
     position: relative;
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     padding: 40px;
   
@@ -28,6 +28,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: opacity 250ms linear, visibility 250ms linear;
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
   }
 
   .is-hidden {

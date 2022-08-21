@@ -24,11 +24,17 @@
   <body>
     <!-- Header section -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner header__conteiner">
         <a class="logo header__logo link" href="./index.html"
-          >Web<span class="header__logo--accent">Studio</span></a
-        >
+          >Web<span class="header__logo--accent">Studio</span>
+        </a>
+
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./icons/icons.svg#mobile_menu"></use>
+          </svg>
+        </button>
 
         <nav class="nav">
           <ul class="nav__list list">
@@ -61,19 +67,19 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- main section -->
 
     <main>
       <!-- hero section -->
 
-      <!-- <section class="hero section overlay">
+      <section class="hero section overlay">
         <div class="conteiner hero__conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- features section -->
 
@@ -141,9 +147,10 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  width="370"
-                  height="294"
-                  src="./images/what_we_do/1.jpg"
+                  srcset="./images/work/img-1@1x-lg.jpg 1x, ./images/work/img-1@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/work/img-1@1x-lg.jpg"
                   alt="человек печатает на клавиатуре"
                 />
                 <div class="work__overlay">
@@ -154,9 +161,10 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  width="370"
-                  height="294"
-                  src="./images/what_we_do/2.jpg"
+                  srcset="./images/work/img-2@1x-lg.jpg 1x, ./images/work/img-2@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/work/img-2@1x-lg.jpg"
                   alt="человек выбирает макет сайта"
                 />
                 <div class="work__overlay">
@@ -167,9 +175,10 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  width="370"
-                  height="294"
-                  src="./images/what_we_do/3.jpg"
+                  srcset="./images/work/img-3@1x-lg.jpg 1x, ./images/work/img-3@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/work/img-3@1x-lg.jpg"
                   alt="человек рабоотает с цветом на клавиатуре"
                 />
                 <div class="work__overlay">
@@ -183,16 +192,17 @@
 
       <!-- team section -->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="conteiner team__conteiner">
           <h2 class="team__title">Наша команда</h2>
 
           <ul class="team__list list">
             <li class="team__item">
               <img
-                width="270"
+                srcset="./images/team/img-1@1x-sm.jpg 1x, ./images/team/img-1@2x-sm.jpg 2x"
+                width="450"
                 height="260"
-                src="./images/our_team/1(pd).jpg"
+                src="./images/team/img-1@1x-lg.jpg"
                 alt="фото Игорь Демьяненко"
               />
               <div class="team__wrapper">
@@ -257,9 +267,10 @@
 
             <li class="team__item">
               <img
-                width="270"
+                srcset="./images/team/img-2@1x-sm.jpg 1x, ./images/team/img-2@2x-sm.jpg 2x"
+                width="450"
                 height="260"
-                src="./images/our_team/2(fd).jpg"
+                src="./images/team/img-2@1x-lg.jpg"
                 alt="фото Ольга Репина"
               />
               <div class="team__wrapper">
@@ -324,9 +335,10 @@
 
             <li class="team__item">
               <img
-                width="270"
+                srcset="./images/team/img-3@1x-sm.jpg 1x, ./images/team/img-3@2x-sm.jpg 2x"
+                width="450"
                 height="260"
-                src="./images/our_team/3(mark).jpg"
+                src="./images/team/img-3@1x-lg.jpg"
                 alt="фото Николай Тарасов"
               />
               <div class="team__wrapper">
@@ -391,9 +403,10 @@
 
             <li class="team__item">
               <img
-                width="270"
+                srcset="./images/team/img-4@1x-sm.jpg 1x, ./images/team/img-4@2x-sm.jpg 2x"
+                width="450"
                 height="260"
-                src="./images/our_team/4(ui).jpg"
+                src="./images/team/img-4@1x-lg.jpg"
                 alt="фото Михаил Ермаков"
               />
               <div class="team__wrapper">
@@ -457,7 +470,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- customers section -->
 
@@ -514,7 +527,7 @@
 
     <!-- footer section -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="conteiner footer__conteiner">
         <div class="footer__address-conteiner">
           <a class="footer__logo logo link" href="./index.html"
@@ -596,7 +609,7 @@
               <input class="footer-form__input" type="email" name="email" placeholder="E-mail" />
             </label>
 
-            <button class="footer-form__btn btn" type="submit">
+            <button class="footer-form__btn" type="submit">
               Подписаться
               <svg class="footer-form__btn-icon" height="24" width="24">
                 <use href="./icons/icons.svg#icon-send"></use>
@@ -605,11 +618,11 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="11" height="11">
@@ -666,8 +679,40 @@
           <button class="register-form-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
+    <!-- mobile menu -->
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-btn" type="button" data-menu-close>
+        <svg class="mobile-icon" width="40" height="40">
+          <use href="./icons/icons.svg#mobile_close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list list">
+        <li class="mobile-item">Студия<a href=""></a></li>
+        <li class="mobile-item">Портфолио<a href=""></a></li>
+        <li class="mobile-item">Контакты<a href=""></a></li>
+      </ul>
+      <ul class="menu-contacts list">
+        <a class="menu-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </ul>
+      <ul class="mobile-socials-list list">
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/madal.js"></script>
   </body>
 </html>

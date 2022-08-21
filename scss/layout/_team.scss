@@ -1,17 +1,43 @@
 .team {
     background-color: #f5f4fa;
+    padding-top: 60px;
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}
   
   .team__conteiner {
     text-align: center;
   }
   .team__list {
     display: flex;
-    gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
   }
   
   .team__item {
+
+    max-width: 450px;
     background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+    
   }
   
   .team__wrapper {

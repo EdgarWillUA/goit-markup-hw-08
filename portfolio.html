@@ -28,6 +28,12 @@
           >Web<span class="header__logo--accent">Studio</span></a
         >
 
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./icons/icons.svg#mobile_menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -77,7 +83,11 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
-                  <img width="370" height="294" src="./images/portfolio/web.jpg" alt="Веб сайт" />
+                  <img srcset="./images/project/img-1@1x-lg.jpg 1x, ./images/project/img-1@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-1@1x-lg.jpg" 
+                  alt="Веб сайт" />
 
                   <div class="product-overlay">
                     <p class="overlay-txt">
@@ -99,9 +109,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/ui.jpg"
+                  srcset="./images/project/img-2@1x-lg.jpg 1x, ./images/project/img-2@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-2@1x-lg.jpg"
                     alt="Постер Нью Орлеан"
                   />
                   <div class="product-overlay">
@@ -124,9 +135,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/app.jpg"
+                  srcset="./images/project/img-3@1x-lg.jpg 1x, ./images/project/img-3@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-3@1x-lg.jpg"
                     alt="Постер ресторана"
                   />
                   <div class="product-overlay">
@@ -149,9 +161,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/market.jpg"
+                  srcset="./images/project/img-4@1x-lg.jpg 1x, ./images/project/img-4@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-4@1x-lg.jpg"
                     alt="Наушники"
                   />
                   <div class="product-overlay">
@@ -174,9 +187,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/growing.jpg"
+                  srcset="./images/project/img-5@1x-lg.jpg 1x, ./images/project/img-5@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-5@1x-lg.jpg"
                     alt="Коробки"
                   />
                   <div class="product-overlay">
@@ -199,9 +213,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/borders.jpg"
+                  srcset="./images/project/img-6@1x-lg.jpg 1x, ./images/project/img-6@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-6@1x-lg.jpg"
                     alt="Монитор"
                   />
                   <div class="product-overlay">
@@ -223,7 +238,10 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
-                  <img width="370" height="294" src="./images/portfolio/limited.jpg" alt="Книга" />
+                  <img srcset="./images/project/img-7@1x-lg.jpg 1x, ./images/project/img-7@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-7@1x-lg.jpg" alt="Книга" />
                   <div class="product-overlay">
                     <p class="overlay-txt">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -243,7 +261,10 @@
             <li class="portfolio-item">
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
-                  <img width="370" height="294" src="./images/portfolio/lab.jpg" alt="Бирка" />
+                  <img srcset="./images/project/img-8@1x-lg.jpg 1x, ./images/project/img-8@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-8@1x-lg.jpg" alt="Бирка" />
                   <div class="product-overlay">
                     <p class="overlay-txt">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -264,9 +285,10 @@
               <a class="portfolio-link link" href="">
                 <div class="product-thumb">
                   <img
-                    width="370"
-                    height="294"
-                    src="./images/portfolio/growing.jpg"
+                  srcset="./images/project/img-9@1x-lg.jpg 1x, ./images/project/img-9@2x-lg.jpg 2x"
+                  width="450"
+                  height="260"
+                  src="./images/project/img-9@1x-lg.jpg"
                     alt="Ноутбук"
                   />
                   <div class="product-overlay">
@@ -381,5 +403,40 @@
         </form>
       </div>
     </footer>
+
+     <!-- mobile menu -->
+     <div class="mobile-menu" data-menu>
+      <button class="mobile-btn" type="button" data-menu-close>
+        <svg class="mobile-icon" width="40" height="40">
+          <use href="./icons/icons.svg#mobile_close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list list">
+        <li class="mobile-item">Студия<a href=""></a></li>
+        <li class="mobile-item">Портфолио<a href=""></a></li>
+        <li class="mobile-item">Контакты<a href=""></a></li>
+      </ul>
+      <ul class="menu-contacts list">
+        <a class="menu-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </ul>
+      <ul class="mobile-socials-list list">
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>
