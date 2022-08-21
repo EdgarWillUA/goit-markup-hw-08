@@ -1,5 +1,9 @@
 .footer-form {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-form-title {
@@ -15,18 +19,14 @@
 
   color: #212121;
 
-  @media screen and (min-width: 1200px) {
-  text-align: left;
-  }
+  
 }
 
 .footer-form__group {
   align-items: center;
 
-
   @media screen and (min-width: 1200px) {
    display: flex;
-
    gap: 20px;
   }
 
