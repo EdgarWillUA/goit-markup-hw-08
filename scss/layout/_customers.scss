@@ -24,7 +24,7 @@
 
 
 .customers__logo-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -38,6 +38,17 @@
     &:focus {
     border-color: rgba(33, 150, 243, 1);
     }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
+
 }
 
 .customers__logo {

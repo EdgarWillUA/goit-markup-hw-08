@@ -1,11 +1,11 @@
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--dark-bg-color);
   }
   
   .footer__conteiner {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -16,11 +16,16 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: baseline;
-      text-align: left;
+      
 
     }
-    // align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      gap: unset;
+      text-align: unset;
   }
+}
   
   .footer__logo {
     margin-bottom: 20px;

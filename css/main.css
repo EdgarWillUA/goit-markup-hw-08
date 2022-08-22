@@ -888,6 +888,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 64px;
 }
 
 .menu-tel {
@@ -906,7 +907,6 @@ img {
   letter-spacing: 0.02em;
   text-align: left;
   color: #757575;
-  margin-bottom: 64px;
 }
 
 .mobile-socials-list {
@@ -1272,7 +1272,7 @@ img {
 }
 
 .customers__logo-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1291,6 +1291,16 @@ img {
 .customers__logo-link:hover, .customers__logo-link:focus {
   border-color: rgb(33, 150, 243);
 }
+@media screen and (min-width: 768px) {
+  .customers__logo-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo-link {
+    width: 170px;
+  }
+}
 
 .customers__logo {
   fill: rgb(175, 177, 184);
@@ -1304,12 +1314,12 @@ img {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-bg-color);
 }
 
 .footer__conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1334,7 +1344,15 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: unset;
+    text-align: unset;
   }
 }
 
